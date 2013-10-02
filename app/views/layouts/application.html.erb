@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Esp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+    
+ 
+    <!-- Google Web Fonts -->
+    
+  <!-- Included JS Files -->
+    <script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+
+<%= yield %>
+
+<div id="footerWrapp">
+  <a href="#" class="goTop">Go Top</a>
+      <div id="topFooter">
+        <div id="footer" class="row">
+            <div class="large-8 small-12 columns">
+                <div class="row footerNav">
+                    <ul id="footer-navigation" class="footerUl clear-fix">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="typography.html">Features</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    
+                    <ul id="footer-info" class="footerUl clear-fix">
+                        <li>Some Street. City, 0000.</li>
+                        <li>(328) 357-5478</li>
+                        <li>email@email.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="large-4 columns footerSocials">
+              <p>Follow us on :</p>
+                <span class="footSocials clear-fix">
+                  <a class="facebook" href="#">Facebook</a>
+                    <a class="twitter" href="#">Twitter</a>
+                    <a class="skype" href="#">Skype</a>
+                    <a class="vimeo" href="#">Vimeo</a>
+                </span>
+            </div>
+         </div>
+      </div>
+      
+      <div id="copyright" class="row">
+        <p>2013@E-SolutionPark</p>
+      </div>
+  </div>
+
+
+  <!--Zepto and jQuery Script-->
+  <script>
+    document.write('<script src=' + ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') + '.js><\/script>')
+  </script>
+  
+  <!--Minified Foundation Javascript file-->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!--
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+  
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
+  -->
+  
+  <!--Call Foundation script in document-->
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!--ORBIT SLIDER SCRIPT-->
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <!--Select Menu on Smaller Screens-->
+  <script type="text/javascript">
+    $("select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
+  </script>
+  
+  <!--Arc Text Plugin-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.arctext.js"></script>
+  <script type="text/javascript">
+      $('#titleContainer h1').arctext({radius: 2300})
+    
+    $('.goTop').on('click', function(e) {
+      $('html, body').animate({
+        scrollTop : 0
+      },'slow');
+      
+      e.preventDefault();
+    });
+    
+    $('.trait-box').click(function(e) {
+            e.preventDefault();
+        });
+  </script>
+  
+   <!--PrettyPhoto Plugin-->
+  <script type="text/javascript" src="javascripts/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
+  
+  <!--MediaNovak Script-->
+  <script type="text/javascript" src="javascripts/novakScript.js"></script>
+  
+  <script type='text/javascript' src='javascripts/jquery.min.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='javascripts/camera.js'></script> 
+    
+    <script>
+    jQuery(function(){
+      var windowsize = $(window).width();
+
+      $(window).resize(function() {
+        var windowsize = $(window).width();
+      });
+      
+      if (windowsize < 485) {
+          jQuery('#camera_wrap_1').camera({
+          height: '290px',
+          pagination: false,
+          thumbnails: false,
+        });
+      }
+      else {
+        jQuery('#camera_wrap_1').camera({
+          height: '697px',
+          pagination: false,
+          thumbnails: false,
+        });
+      }
+    });
+  </script>
+</body>
+</html>

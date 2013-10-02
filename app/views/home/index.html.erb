@@ -1,0 +1,438 @@
+
+  <div class="fluid_container">
+        <div class="camera_wrap camera_burgundy_skin" id="camera_wrap_1">
+            <div data-thumb="<%= asset_path( '11.jpg' ) %>" data-src="<%= asset_path( '1.jpg' ) %>">
+            </div>
+            <div data-thumb="<%= asset_path( '22.jpg' ) %>" data-src="<%= asset_path( '2.jpg' ) %>">
+            </div>
+            <div data-thumb="<%= asset_path( '/app/assets/images/33.jpg' ) %>" data-src="<%= asset_path( '/app/assets/images/3.jpg' ) %>">
+            </div>
+        </div>
+    </div><!-- .fluid_container -->
+  
+ <!-- THIS IS YOUR HEAD WITH NAVIGATION, INTRO TEXT AND SOCIALS-->
+ <div id="headerWrapper" class="clear-fix">
+  <div id="header" class="row">
+    <nav class="top-bar">
+        <ul class="title-area">
+        
+        <!-- Title Area -->
+        
+        <li class="name">
+          <h1><a class="logo" href="index-2.html"><%= image_tag('logoHere.png')%></a></h1>
+        </li>
+        
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+    
+        <section class="top-bar-section clear-fix">
+        <!-- Left Nav Section -->
+        
+        <ul class="left">
+          <li class="active"><a href="index-2.html">Home</a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
+          <li class="active"><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="blog.html">Blog</a></li>
+          <li class="active has-dropdown"><a href="#">Features</a>
+            <ul class="dropdown">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="single-post.html">Single Post</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="typography.html">Typography</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+        <select> 
+        <option value="" selected="selected">Navigation</option> 
+        
+        <option value="index.html">Home</option> 
+        <option value="about.html">About Us</option> 
+        <option value="portfolio.html">Portfolio</option> 
+        <option value="blog.html">Blog</option> 
+        <option value="services.html">Services</option>
+          <option value="single-post.html">Single Post</option> 
+          <option value="team.html">Team</option> 
+          <option value="typography.html">Typography</option>
+          <option value="contact.html">Contact</option> 
+      </select> 
+        
+        <ul id="socials">
+          <li class="active"><a href="#">Facebook</a></li>
+          <li class="active"><a href="#">Twitter</a></li>
+        </ul>
+        </section>
+  </nav>
+    
+    
+   <!-- MAIN TITLE AND INTRO PARAGRAPHS-->
+   
+    <div class="row clear-fix">
+        <div class="large-3 large-centered columns text1">
+            <p>Habitasse vut ut, nisi eu</p>
+            <p>Urna proin placerat</p>
+        </div>
+    </div>
+    
+    <div id="titleContainer" class="row clear-fix">
+      <p>The</p>
+      <h1 class="mainTitle">E-Solution Park</h1>
+        <p class="desc">Ac, etiam magna odio purus egestas</p>
+        <p class="desc desc2">magna porta lundium, scelerisque elit.</p>
+    </div>
+    
+     <!--Design Photography & Branding Categories-->
+     <div class="row traits-wrapper clear-fix">
+      <a href="#" class="trait-box design">
+            <h4>Design</h4>
+            <figure><%= image_tag('blog-img1.jpg',width:'326', height:'184')%>
+            </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large design">
+                  <span>Design</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+          
+          <a href="#" class="trait-box photography">
+            <h4>Photography</h4>
+            <figure>
+            <%= image_tag('blog-img2.jpg',width:'326', height:'184')%>
+            </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large photography">
+                  <span>Photography</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+          
+          <a href="#" class="trait-box branding">
+            <h4>Branding</h4>
+            <figure>
+              <%= image_tag('blog-img3.jpg',width:'326', height:'184')%>
+              </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large branding">
+                  <span>Branding</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+     </div>
+  </div>
+ </div>
+ 
+ <div class="row" id="recentProjects">
+  <div class="large-12 columns recTitle">
+      <h4>Recent Projects</h4>
+    </div>
+    
+    <div class="large-3 columns recPost">
+      <span class="hoverEffect">
+          <%= image_tag('recentpr1.png')%>
+              <a href="images/blog-img1.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <p class="date">05.01.2013</p>
+        <h4><a href="project.html">Adipiscing velit aliquet</a></h4>
+        <p class="postContent">Cursus dis lundium, sit mauris elementum platea risus tempor integer quis. Augue facilisis, magna et. </p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+      <span class="hoverEffect">
+            <%= image_tag('recentpr2.png')%>
+              <a href="images/1-Home/blog-img2.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <p class="date">05.01.2013</p>
+        <h4><a href="project.html">Adipiscing velit aliquet</a></h4>
+        <p class="postContent">Cursus dis lundium, sit mauris elementum platea risus tempor integer quis. Augue facilisis, magna et. </p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+      <span class="hoverEffect">
+      <%= image_tag('recentpr3.png')%>
+              <a href="images/1-Home/blog-img3.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <p class="date">05.01.2013</p>
+        <h4><a href="project.html">Adipiscing velit aliquet</a></h4>
+        <p class="postContent">Cursus dis lundium, sit mauris elementum platea risus tempor integer quis. Augue facilisis, magna et. </p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+      <span class="hoverEffect">
+          <%= image_tag('recentpr4.png')%>
+              <a href="images/1-Home/blog-img4.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <p class="date">05.01.2013</p>
+        <h4><a href="project.html">Adipiscing velit aliquet</a></h4>
+        <p class="postContent">Cursus dis lundium, sit mauris elementum platea risus tempor integer quis. Augue facilisis, magna et. </p>
+    </div>
+ </div>
+ 
+ 
+ <!--THIS IS CONTAINER WITH SERVICE INFORMATIONS-->
+ 
+ <div id="services" class="row">
+  <div class="large-12 columns recTitle">
+      <h4>Services</h4>
+    </div>
+    
+    <div class="large-6 small-12 columns serContainer1">
+      <div class="serviceInfo">
+          <%= image_tag('ico1.png')%>
+            <h3>Web Design</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+        
+        <div class="serviceInfo">
+          <%= image_tag('ico2.png')%>
+            <h3>Seo</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+        
+        <div class="serviceInfo">
+          <%= image_tag('ico3.png')%>
+            <h3>Mobile Apps</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+    </div>
+    
+    <div class="large-6 small-12 columns serContainer2">
+      <div class="serviceInfo">
+          <%= image_tag('ico4.png')%>
+            <h3>Photography</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+        
+        <div class="serviceInfo">
+          <%= image_tag('ico5.png')%>
+            <h3>Responsive</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+        
+        <div class="serviceInfo">
+          <%= image_tag('ico6.png')%>
+            <h3>Social Networks</h3>
+            <p>Hac cras turpis urna magna aliquam sit eu egestas enim, eros, ut, eros nisi amet tortor urna.</p>
+        </div>
+    </div>
+ </div>
+ 
+ 
+ <!--Quote Container Wrapper-->
+ 
+ <div id="quoteContainer">
+  <div id="quoteContent" class="row">
+      <ul id="featured2" data-orbit>
+          <li data-orbit-slide="headline-1">
+              <div class="quoteSection">
+                   <p><%= image_tag('quote.png')%></p>
+                   <p class="quoteContent">“ Integer ac in? Nascetur ac, duis dictumst mauris elementum ridiculus egestas, elit in, tincidunt, pid tincidunt duis cum odio rhoncus enim. Ac aenean! Mus, urna aliquet vel vut, vel! Egestas dolor, amet cum elementum elit, pid ridiculus eu turpis mus, nec duis urna? Cursus diam rhoncus porta, sed urna, proin turpis rhoncus aenean, lundium auctor?</p>
+                   <p class="theName">John Doe</p>
+                   <p class="bussines">Graphic Designer</p>
+               </div>
+          </li>
+          
+          <li data-orbit-slide="headline-2">
+              <div class="quoteSection">
+                   <p><%= image_tag('quote.png')%></p>
+                   <p class="quoteContent">“ Integer ac in? Nascetur ac, duis dictumst mauris elementum ridiculus egestas, elit in, tincidunt, pid tincidunt duis cum odio rhoncus enim. Ac aenean! Mus, urna aliquet vel vut, vel! Egestas dolor, amet cum elementum elit, pid ridiculus eu turpis mus, nec duis urna? Cursus diam rhoncus porta, sed urna, proin turpis rhoncus aenean, lundium auctor?</p>
+                   <p class="theName">Jane Doe</p>
+                   <p class="bussines">Web Designer</p>
+               </div>
+          </li>
+          
+          <li data-orbit-slide="headline-3">
+              <div class="quoteSection">
+                   <p><%= image_tag('quote.png')%></p>
+                   <p class="quoteContent">“ Integer ac in? Nascetur ac, duis dictumst mauris elementum ridiculus egestas, elit in, tincidunt, pid tincidunt duis cum odio rhoncus enim. Ac aenean! Mus, urna aliquet vel vut, vel! Egestas dolor, amet cum elementum elit, pid ridiculus eu turpis mus, nec duis urna? Cursus diam rhoncus porta, sed urna, proin turpis rhoncus aenean, lundium auctor?</p>
+                   <p class="theName">Johan Doe</p>
+                   <p class="bussines">Photographer</p>
+               </div>
+          </li>
+    </ul>
+    </div>
+ </div>
+  
+  
+ <!--Recent BlogPost Section-->
+ 
+ <div id="postsContainer" class="row">
+  <div class="large-12 columns recTitle">
+      <h4>Recent Blog Posts</h4>
+    </div>
+    
+    <div class="large-6 columns postContainer">
+        <div class="post-num">
+          <%= image_tag('blog-img1.jpg')%>
+            <p class="postDate">05.12.2013</p>
+        </div>
+        
+        <div class="postInfo">
+          <%= image_tag('user1.png')%>
+            <p class="posterName"><a href="single-post.html">Mus nascetur</a></p>
+            <p class="postInfo">Adipiscing nisi phasellus auctor et a rhoncus vel ac. Non nunc sit, porta, augue egestas integer.</p>
+        </div>
+        
+        <div class="blogHover">
+            <%= image_tag('blog-img3.jpg')%>
+              <a href="images/1-Home/blog-img3.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="single-post.html">Link</a>
+        </div>
+    </div>
+    
+    <div class="large-6 columns postContainer">
+      <div class="post-num">
+          <%= image_tag('blog-img2.jpg')%>
+            <p class="postDate">05.12.2013</p>
+        </div>
+        
+        <div class="postInfo">
+          <%= image_tag('user2.png')%>
+            <p class="posterName"><a href="single-post.html">Mus nascetur</a></p>
+            <p class="postInfo">Adipiscing nisi phasellus auctor et a rhoncus vel ac. Non nunc sit, porta, augue egestas integer.</p>
+        </div>
+        
+         <div class="blogHover">
+              <a href=<%= image_tag('blog-img3.jpg')%> rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="single-post.html">Link</a>
+        </div>
+    </div>
+    
+     <div class="large-6 columns postContainer">
+      <div class="post-num">
+          <%= image_tag('blog-img3.jpg')%>
+            <p class="postDate">05.12.2013</p>
+        </div>
+        
+        <div class="postInfo">
+          <img src="images/1-Home/user3.png" alt="Posted By" />
+           <p class="posterName"><a href="single-post.html">Mus nascetur</a></p>
+            <p class="postInfo">Adipiscing nisi phasellus auctor et a rhoncus vel ac. Non nunc sit, porta, augue egestas integer.</p>
+        </div>
+        
+         <div class="blogHover">
+              <a href="<%= image_tag('blog-img1.jpg')%>" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="single-post.html">Link</a>
+        </div>
+    </div>
+    
+    <div class="large-6 columns postContainer">
+      <div class="post-num">
+          <%= image_tag('blog-img4.jpg')%>
+            <p class="postDate">05.12.2013</p>
+        </div>
+        
+        <div class="postInfo">
+          <%= image_tag('user4.png')%>
+            <p class="posterName"><a href="single-post.html">Mus nascetur</a></p>
+            <p class="postInfo">Adipiscing nisi phasellus auctor et a rhoncus vel ac. Non nunc sit, porta, augue egestas integer.</p>
+        </div>
+        
+         <div class="blogHover">
+              <a href="<%= image_tag('blog-img3.jpg')%>" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="single-post.html">Link</a>
+        </div>
+    </div>
+ </div>
+
+
+<script>
+  
+  function Slider(container, nav) {
+  this.container = container;
+  this.nav = nav;
+  
+  this.imgs = this.container.find('img');
+  this.imgWidth = this.imgs[0].width;
+  this.imgsLen = this.imgs.length;
+  
+  this.current = 0;
+};
+
+Slider.prototype.transition = function(coords) {
+  this.container.animate({
+    'margin-left' : coords || -(this.current * this.imgWidth)
+  });
+};
+
+Slider.prototype.setCurrent = function(dir) {
+  var pos = this.current;
+  
+  pos += (~~(dir === 'next') || -1);
+  this.current = (pos < 0) ? this.imgsLen - 1 : pos % this.imgsLen;
+  
+  return pos;
+};
+
+function Slider2(container, nav) {
+  this.container = container;
+  this.nav = nav;
+  
+  this.imgs = this.container.find('li');
+  this.imgWidth = this.imgs.outerWidth(true);
+  this.imgsLen = this.imgs.length - 3;
+  
+  this.current = 0;
+};
+
+Slider2.prototype.transition = function(coords) {
+  this.container.animate({
+    'margin-left' : coords || -(this.current * this.imgWidth)
+  });
+};
+
+Slider2.prototype.setCurrent = function(dir) {
+  var pos = this.current;
+  
+  pos += (~~(dir === 'next') || -1);
+  this.current = (pos < 0) ? this.imgsLen - 1 : pos % this.imgsLen;
+  
+  return pos;
+};
+
+$(document).ready(function(e) {
+  $('.ui-accordion h3').on('click', function(e) {
+    if ($('.ui-accordion h3').hasClass('activeAcc')) {
+      $('.ui-accordion h3').removeClass('activeAcc');
+      $('.ui-accordion h3').addClass('non-active');
+    } else {
+      $('.ui-accordion h3').removeClass('non-active');
+      $('.ui-accordion h3').addClass('activeAcc');
+    };
+  });
+  
+    $('.ui-accordion h3').on('click', function(e) {
+    if ($(this).hasClass('activeAcc')) {
+      $(this).removeClass('activeAcc');
+      $(this).addClass('non-active');
+    } else {
+      $(this).removeClass('non-active');
+      $(this).addClass('activeAcc');
+    };
+  });
+});
+</script>
